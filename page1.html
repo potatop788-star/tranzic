@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>OnlyCash/Вход</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
     <header>
         <div class="logo">
-            <span class="logo_text">OnlyCash</span>
-            <span class="logo_subtitle">финансовый трекер</span>
-            <span>
-                <img src="./img/cash-no-bg-preview (carve.photos).png" alt="" width="90" height="55">
-            </span>
-        </div>
-        <nav>
-            <a href="page2.html">Главная</a>
-            <a href="page3.html">Транзакции</a>
-            <a href="page3.html">Аналитика</a>
-            <a href="page1.html">Вход</a>
-        </nav>
-    </header>
-    <main>
-        <div class="login_form">
-            <h2>Авторизация</h2>
-            <form>
-                <input type="text" placeholder="Логин" class="input_field">
-                <input type="password" placeholder="Пароль" class="input_field">
-                <div class="form_bottom">
-                    <label class="remember">
-                        <input type="checkbox">
-                        Запомнить меня
-                    </label>
-                    <button type="submit" class="login_btn">Вход</button>
-                </div>
-            </form>
-            <div class="for_links">
-                <a href="">Забыли пароль?</a>
-                <a href="">Регистрация</a>
+            <div class ="image_logo">
+                <img src="./img/Group 17.png" >
             </div>
         </div>
-    </main>
-        <footer>
-            <nav>
-                <a href="page2.html">Главная</a>                                  
-                <a href="page3.html">Транзакции</a>
-                <a href="page3.html">Аналитика</a>
-            </nav>
-        </footer>
+        <nav>
+            <a href="./page2.html">Главная</a>
+            <a href="./page3.html">Транзакции</a>
+            <a href="./page4.html">Аналитика</a>
+            <a href="">Вход</a>
+        </nav>
+    </header>
+
+    <div class="hero-bg"></div>
+
+    <div class="login-container">
+        <h2>Авторизация</h2>
+        
+        <div class="input-group">
+            <input type="text" placeholder="Логин">
+        </div>
+        
+        <div class="input-group">
+            <input type="password" placeholder="Пароль">
+        </div>
+
+        <div class="checkbox-row">
+            <label>
+                <input type="checkbox"> Запомнить меня
+            </label>
+            <button class="btn-login">Вход</button>
+        </div>
+
+        <div class="links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Регистрация</a>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <a href="page2.html">Главная</a>                                  
+            <a href="page3.html">Транзакции</a>
+            <a href="page3.html">Аналитика</a>
+        </nav>
+    </footer>
 </body>
 </html>
