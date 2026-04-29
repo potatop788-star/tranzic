@@ -15,21 +15,28 @@
             </div>
         </div>
         <nav>
-            <a href="#">Главная</a>
-            <a href="#">Транзакции</a>
-            <a href="#">Аналитика</a>
-            <a href="#">Это вы</a>
+            <a href="./page2.html">Главная</a>
+            <a href="./page3.html">Транзакции</a>
+            <a href="./page4.html">Аналитика</a>
+            <a href="./page1.html">Вход</a>
         </nav>
     </header>
 
     <div class="main-content">
-        <div class="transaction-list">
-            <div class="filter-buttons">
+        <div class="controls">
+            <div class="sidebar-filters">
                 <button class="filter-btn active">Все</button>
                 <button class="filter-btn">Доходы</button>
                 <button class="filter-btn">Расходы</button>
             </div>
 
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск">
+                <span class="filter-icon">Ф</span>
+            </div>
+        </div>
+
+        <div class="transaction-list">
             <div class="transaction">
                 <div class="transaction-info">
                     <h4>Такси</h4>
@@ -64,21 +71,23 @@
 
             <div class="transaction">
                 <div class="transaction-info">
-                    <h4>🛒 Продукты</h4>
+                    <h4>Продукты</h4>
                     <p>Еда 2026-04-26</p>
                 </div>
                 <div class="transaction-amount negative">-2 450 ₽</div>
             </div>
         </div>
 
-        <button class="add-btn">Добавить транзакцию +</button>
+        <button class="add-btn">
+            Добавить транзакцию <span style="font-size:20px;">+</span>
+        </button>
     </div>
-
-    <div class="bottom-nav">
-        <a href="#">Главная</a>
-        <a href="#">Транзакции</a>
-        <a href="#">Аналитика</a>
-    </div>
-
+    <footer>
+        <nav>
+            <a href="page2.html">Главная</a>                                  
+            <a href="page3.html">Транзакции</a>
+            <a href="page4.html">Аналитика</a>
+        </nav>
+    </footer>
 </body>
 </html>

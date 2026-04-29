@@ -6,149 +6,39 @@
 
 body {
     font-family: PT serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Header */
+/* Шапка */
 header {
-    background-color:#B3D7BA;
-    padding: 5px 4px;
+    background-color: #B3D7BA;
+    padding: 3px 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo_text {
-    font-size: 28px;
-    font-weight: bold;
-    color: #2c2c2c;
-}
-
-.logo_subtitle {
-    font-size: 18px;
-    color: #2c2c2c;
+    color: black;
 }
 
 nav a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    color: #2c2c2c;
-    font-size: 20px;
-    margin-left: 30px;
-    transition: color 0.3s;
+    margin-left: 45px;
+    font-size: 25px;
 }
 
-nav a:hover {
-    color: #5a5a5a;
-}
-
-.login_link {
-    margin-left: 50px;
-}
-
-/* Main */
-main {
-    flex: 1;
-    background-image: url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1920');
+.money-bg {
+    height: 270px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/moneybg.jpg);
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    
 }
-
-.login_form {
-    background-color: #a8c4a8;
-    padding: 40px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.login_form h2 {
-    font-size: 26px;
-    color: #2c2c2c;
-    margin-bottom: 30px;
-}
-
-.input_field {
-    width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    background-color: white;
-}
-
-.form_bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.remember {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    color: #2c2c2c;
-    cursor: pointer;
-}
-
-.remember input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.login_btn {
-    background-color: #5a5a5a;
-    color: white;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login-btn:hover {
-    background-color: #3c3c3c;
-}
-
-.form-links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-
-.form-links a {
-    text-decoration: none;
-    color: #2c2c2c;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.form-links a:hover {
-    color: #5a5a5a;
-}
-
-/* Footer */
 footer {
-    background-color: #4a674a;
+    background-color: #47664C;
     padding: 30px 40px;
     text-align: center;
+    height: 500px;
 }
 
 footer nav a {
@@ -163,6 +53,211 @@ footer nav a:hover {
     color: white;
 }
 
+/*Вход*/
+.login-container {
+    max-width: 380px;
+    height: 390px;
+    margin: -90px auto 40px;
+    background: #97B39C;
+    border-radius: 45px;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.input-group {
+    margin-bottom: 35px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    background-color: white;
+    border-radius: 6px;
+    height: 50px;
+
+}
+
+.checkbox-row label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+    font-size: 15px;
+}
+
+.btn-login {
+    background: #4E4E4E;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -25px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* страница транзакций */
+.main-content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background: #E9F4EB;
+    border-radius: 16px;
+    padding-bottom: 80px;
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.sidebar-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 140px;
+}
+
+.filter-btn {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #B3D7BA;
+    color: #000000;
+    cursor: pointer;
+    text-align: left;
+}
+
+.filter-btn.active {
+    background: #94A897;
+    color: rgb(0, 0, 0);
+}
+
+/* Поиск */
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px 10px;
+}
+
+.filter-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Список транзакций */
+.transaction-list {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+
+.transaction-info h4 {
+    font-size: 17.5px;
+    margin-bottom: 3px;
+}
+
+.transaction-info p {
+    font-size: 13.5px;
+    color: #666;
+}
+
+.transaction-amount {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.positive { color: #2e7d5e; }
+.negative { color: #e63939; }
+
+/* Кнопка добавить */
+.add-btn {
+    background: #a8d5ba;
+    color: #1e3a2f;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*подваллллл*/
+.bottom-nav {
+    background: #2e7d5e;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
 
 
 /* я добавила */
@@ -197,7 +292,11 @@ body {
   font-size: 2rem;
   font-weight: 700;
   color: #0f172a;
+  padding: 20px 50px 0;
+  height: auto;
+  width: auto;
 }
+
 .logo span {
   font-size: 0.85rem;
   font-weight: 400;
@@ -328,20 +427,4 @@ font-weight: 700;
 .income-text { color: #0f9d58; }
 .expense-text { color: #dc4c4c; }
 
-footer {
-    background-color: #47664C;
-    padding: 30px 40px;
-    text-align: center;
-}
 
-footer nav a {
-    text-decoration: none;
-    color: #c8bd5e;
-    font-size: 16px;
-    margin: 0 25px;
-}
-footer {
-  padding: 3rem 1rem;      
-  min-height: 250px;       
-  line-height: 2;          
-}
