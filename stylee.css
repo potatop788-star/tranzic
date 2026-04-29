@@ -1,20 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: #f1f1f1;
-  font-family: PT serif;
-  line-height: 1.45;
-  padding: 40px 32px;
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+    font-family: PT serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+header {
+    background-color: #B3D7BA;
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
 }
 
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 25px;
+}
 
 .wrapper {
   width: 100%;
@@ -27,15 +36,15 @@ body {
   padding: 40px 48px 48px 48px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.2s;
+  margin: 40px 32px;    
 }
-
 
 .brand {
   text-align: center;
   margin-bottom: 36px;
 }
 
-.logo {
+.brand-logo {
   font-size: 38px;
   font-weight: 650;
   letter-spacing: -0.5px;
@@ -51,7 +60,6 @@ body {
   color: #5e6f8d;
   font-weight: 450;
 }
-
 
 .nav {
   display: flex;
@@ -83,7 +91,6 @@ body {
   cursor: default;
 }
 
-
 .nav a:hover {
   color: #2b8c4a;
   cursor: pointer;
@@ -93,21 +100,17 @@ body {
   margin-left: auto;
 }
 
-
 .content {
   display: flex;
   flex-direction: column;
   gap: 44px;
 }
 
-
 .categories {
   background: #bfdbc2;
   border-radius: 24px;
   padding: 20px 28px;
   margin-bottom: 8px;
-
-
 }
 
 .legends {
@@ -115,7 +118,7 @@ body {
   gap: 44px;
 }
 
-.legends>p {
+.legends > p {
   margin-left: -40px;
 }
 
@@ -160,7 +163,6 @@ body {
 .categories li:last-child {
   border-bottom: none;
 }
-
 
 .report {
   background: #fefefe;
@@ -217,12 +219,196 @@ body {
 }
 
 
-@media (max-width: 900px) {
-  body {
-    padding: 24px 20px;
-  }
+.app-card {
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem 2rem;
+  margin: 40px 32px;       
+}
 
-  .dashboard {
+.app-card-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.app-header {
+  margin-bottom: 0.5rem;
+}
+
+
+.app-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding: 20px 50px 0;
+  height: auto;
+  width: auto;
+}
+
+.image_logo {
+  height: 50px;
+  width: 50px;
+}
+
+.app-logo span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #5b6e8c;
+  margin-left: 0.75rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0 2rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5b6e8c;
+}
+
+.nav-link.active {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #1e293b;
+}
+
+.dashboard-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.balance-block {
+  background: #a4c2b4;
+  border-radius: 32px;
+  padding: 1.5rem 2rem;
+  flex: 2;
+  min-width: 280px;
+}
+
+.balance-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #2c3e2f;
+  margin-bottom: 0.5rem;
+}
+
+.balance-number {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.balance-stats {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.stat-income {
+  color: #0f9d58;
+  font-weight: 700;
+}
+
+.stat-expense {
+  color: #dc4c4c;
+  font-weight: 700;
+}
+
+.action-buttons {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  background: #a4c2b4;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 40px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #92b0a2;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.transactions-section {
+  margin-top: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  color: #0f172a;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eff3f8;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-left {
+  flex: 1;
+}
+
+.transaction-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0rem;
+}
+
+.transaction-meta {
+  font-size: 1rem;
+  color: #7e8b9f;
+}
+
+.transaction-amount {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.income-text { color: #0f9d58; }
+.expense-text { color: #dc4c4c; }
+
+
+@media (max-width: 900px) {
+  .dashboard,
+  .app-card {
+    margin: 24px 20px;
     padding: 28px 28px 36px;
   }
 
@@ -232,16 +418,38 @@ body {
 }
 
 @media (max-width: 600px) {
-  .dashboard {
+  .dashboard,
+  .app-card {
+    margin: 22px 18px;
     padding: 22px 18px;
   }
 
-  .logo {
+  .brand-logo,
+  .app-logo {
     font-size: 30px;
   }
 
-  .nav {
+  .nav,
+  .nav-menu {
     gap: 20px;
     font-size: 15px;
   }
+}
+footer {
+    background-color: #47664C;
+    padding: 30px 40px;
+    text-align: center;
+    height: 500px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #8FC85E;
+    font-size: 16px;
+    margin: 0 25px;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: white;
 }
